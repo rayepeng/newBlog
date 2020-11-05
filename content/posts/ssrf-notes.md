@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Ssrf Notes"
+date: 2020-11-05T20:20:57+08:00
 tags: 
 categories:
 draft: false

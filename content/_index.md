@@ -25,9 +25,9 @@ header:
     paddingY: 0
     align: center
     title:
-      - HUGO
+      - Welcome!
     subtitle:
-      - The world’s fastest framework for building websites
+      - The quieter you become the more you are able to hear
     titleColor: 
     titleShadow: true
     titleFontSize: 44
