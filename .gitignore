@@ -67,3 +67,4 @@ node_modules/
 public/
 static/images/whoami/.DS_Store
 .gitignore
+.DS_Store

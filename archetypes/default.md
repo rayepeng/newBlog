@@ -1,14 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-tags: 
-categories:
-draft: false
-author: prontosil
-authorEmoji: 👻
-hideToc: false
-enableToc: true
-enableTocContent: false
-description: 
+draft: true
 ---
 
