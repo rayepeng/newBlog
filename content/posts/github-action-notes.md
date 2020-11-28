@@ -1,10 +1,9 @@
 ---
-title: "Github Action Notes"
+title: "使用GitHub+firebase写作"
 date: 2020-11-05T20:15:13+08:00
 tags:
 - CI
-draft: false
-author: prontosil
+proauthor: prontosil
 authorEmoji: 👻
 hideToc: false
 enableToc: true
@@ -13,6 +12,8 @@ description:
 ---
 
 最近上手了GitHub action，感觉很好用，特别是用它自动化部署了hugo博客，以往需要在本地生成静态文件并且deploy到firebase的操作全都可以自动化地完成。
+
+
 
 ## 部署hugo博客
 
@@ -56,12 +57,24 @@ jobs:
 
 具体的步骤：
 
-1. checkout仓库到虚拟机上
+1. checkout仓库到虚拟机上，注意需要添加参数 `submodules` 表示克隆子模块
 2. 安装hugo
 3. hugo生成静态文件到 `public` 目录下
 4. firebase部署
 
-可以看到都是用别人写好的action来编排的，只需要传入一些参数和环境变量即可
+
+
+之后如果换电脑了，clone仓库到本地即可
+
+```
+git clone --recursive https://github.com/caffe2/caffe2
+```
+
+注意是需要添加 `--recursive` 参数来递归克隆的
+
+
+
+一句话总结使用GitHub action自动化部署博客的好处：将繁琐的静态文件生成、部署的流程自动化完成。
 
 ## 部署gitbook
 
@@ -101,4 +114,6 @@ git remote add origin https://github.com/xinyongpeng/newBlog.git
 git branch -M main
 git push -u origin main
 ```
+
+执行完后，主分支的名字为`main` 而不是通常的 `master`
 
