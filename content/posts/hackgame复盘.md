@@ -2,6 +2,8 @@
 title: "Hackgame复盘"
 date: 2020-11-29T10:15:23+08:00
 draft: true
+tags: ["CTF"]
+categories: ["CTF"]
 ---
 
 
